@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  make: MyString
+  model: MyString
+  yom: 2024-02-07
+  eng_capacity: 1
+  four_wd: false
+  seat_capacity: MyString
+  build_type: MyString
+  transmission: MyString
+  description: MyText
+
+two:
+  color: MyString
+  make: MyString
+  model: MyString
+  yom: 2024-02-07
+  eng_capacity: 1
+  four_wd: false
+  seat_capacity: MyString
+  build_type: MyString
+  transmission: MyString
+  description: MyText
