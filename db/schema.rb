@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.1].define(version: 2024_02_07_182011) do
+=======
+ActiveRecord::Schema[7.1].define(version: 2024_02_08_175800) do
+>>>>>>> f318534 (add partials and views)
   create_table "cars", force: :cascade do |t|
     t.string "color"
     t.string "make"

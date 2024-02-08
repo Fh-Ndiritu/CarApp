@@ -16,7 +16,11 @@ two:
   color: MyString
   make: MyString
   model: MyString
+<<<<<<< HEAD
   yom: 2024-02-07
+=======
+  yom: 2024-02-08
+>>>>>>> f318534 (add partials and views)
   eng_capacity: 1
   four_wd: false
   seat_capacity: MyString
