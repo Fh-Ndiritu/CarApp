@@ -3,10 +3,10 @@
 <% end %>
 
 
-<div class=" mx-auto md:w-2/3 w-full" style="padding: 20rem; background:red !important">
+<div class=" mx-auto md:w-2/3 w-full" >
   <h1 class="font-bold text-4xl">A New car</h1>
+  <%= render 'makes/form' %>
+  <%# <%= render "form", car: @car %> 
 
-  <%= render "form", car: @car %>
-
-  <%= link_to "Back to cars", cars_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+  <%# link_to "Back to cars", cars_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
 </div>
