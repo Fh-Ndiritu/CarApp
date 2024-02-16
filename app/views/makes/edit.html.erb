@@ -1,0 +1,8 @@
+<div>
+  <h1 class="font-bold text-4xl">Makes#edit</h1>
+  <%= form_with( model: @make) do  |f|%>
+    <%= f.text_field :name, class: "text-gray-800 my-6 p-2 outline-none rounded"  %>
+    <%= f.submit "Add a Make", class: "bg-red-400 hover:bg-red-500 text-white rounded-lg px-10 py-4" %>
+  <% end %>
+  
+</div>

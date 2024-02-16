@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+    <div class="my-5">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+
   <div class="my-5">
     <%= form.label :color %>
     <%= form.text_field :color, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
@@ -18,7 +24,7 @@
 
   <div class="my-5">
     <%= form.label :make %>
-    <%= form.text_field :make, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.select :make, @makes, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
