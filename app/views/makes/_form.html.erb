@@ -1,0 +1,11 @@
+<div class="h-screen">
+
+<h1>Make Form</h1>
+
+<%= form_with(model: Car.new)  do |f|%>
+  <%= f.text_field :make, class: "bg-gray-100 rounded-lg p-2" %>
+  <%= f.submit "Add Make", class: "bg-red-400 hover:bg-red-500 rounded-lg px-10 py-2 text-white cursor-pointer" %>
+<% end %>
+
+
+</div>

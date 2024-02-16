@@ -1,0 +1,62 @@
+<div id="<%= dom_id car %>">
+
+  <h3><%= title(car) %></h3>
+
+  <%= image_tag(car.picture) if car.picture.attached? %>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Color:</strong>
+    <%= car.color %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Make:</strong>
+    <%= car.make.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Model:</strong>
+    <%= car.model %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Yom:</strong>
+    <%= car.yom %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Eng capacity:</strong>
+    <%= car.eng_capacity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Four wd:</strong>
+    <%= car.four_wd %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Seat capacity:</strong>
+    <%= car.seat_capacity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Build type:</strong>
+    <%= car.build_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Transmission:</strong>
+    <%= car.transmission %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= car.description %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this car", car, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this car", edit_car_path(car), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
