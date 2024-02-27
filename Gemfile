@@ -49,24 +49,19 @@ gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri windows]
-end
-
-group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
-
-  # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
-  # gem "rack-mini-profiler"
-
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  gem 'debug', platforms: %i[mri windows] # debugging in the console
+  # gem 'dotenv-rails', '~> 2.8', '>= 2.8.1'  #handle variable security
+  gem 'database_cleaner', '~> 2.0' # clean db after running test
+  gem 'factory_bot_rails', '~> 6.4', '>= 6.4.2' # create test data
+  gem 'faker', '~> 3.2', '>= 3.2.2' # create fake data
+  gem 'launchy', '~> 2.5', '>= 2.5.2' # preview test window
+  gem 'rspec-rails', '~> 6.1' # testing framework
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'capybara' # browser testing frameworks
+  gem 'selenium-webdriver'  # browser testing frameworks
 end
 
-gem 'faker', '~> 3.2'
+gem "shoulda-matchers", "~> 6.1"
