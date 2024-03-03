@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "shoulda-matchers", "~> 6.1"
+
+gem "devise", "~> 4.9"

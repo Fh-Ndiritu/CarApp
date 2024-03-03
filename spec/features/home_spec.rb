@@ -8,13 +8,14 @@ RSpec.describe 'Homepage', type: :feature do
   # navigations -> show full car on button click ( reserve car on show page & reviews)
   # like the car, contact the owner
 
-  # first action is to visit the homepage
   before do
+    user = create(:user)
+    sign_in(user)
     visit home_path
     # this give us a page object
   end
 
-  describe 'user sees header and footer' do
+  describe 'user sees header and footer', :focus do
     it 'has a page header ' do
       expect(page).to have_text('Welcome to CarBnB')
       expect(page.has_css?('nav.header')).to be(true)
@@ -24,7 +25,7 @@ RSpec.describe 'Homepage', type: :feature do
     # implement footer tests
   end
 
-  describe 'user explores available cars', :focus do
+  describe 'user explores available cars' do
     # start by creating 2 cars
     # refresh the page
     # check the tests
