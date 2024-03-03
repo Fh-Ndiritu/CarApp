@@ -17,14 +17,14 @@ RSpec.describe 'Homepage', type: :feature do
   describe 'user sees header and footer' do
     it 'has a page header ' do
       expect(page).to have_text('Welcome to CarBnB')
-      expect(page).to have_css?('nav.header ')
-      expect(page).to have_css?('img.company_logo')
+      expect(page.has_css?('nav.header')).to be(true)
+      expect(page.has_css?('img.company_logo')).to be(true)
     end
 
     # implement footer tests
   end
 
-  describe 'user explores available cars' do
+  describe 'user explores available cars', :focus do
     # start by creating 2 cars
     # refresh the page
     # check the tests
